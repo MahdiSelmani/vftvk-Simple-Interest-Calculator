@@ -1,16 +1,48 @@
 <html>
-    <head>
+
+<head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <title>Web App – Simple Interest Calculator</title>
+</head>
+
+<body>
+    <div id="countainer">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <label>Amount</label><label for=""></label> <input type="number" min="0" id="amount"> <br />
+        <label>Interest rate</label> <input type="range" min="1" max="20" id="rate" step="0.5" onchange=showVal(value)>
+        <span id="ratevalue"></span><br />
+        <label for="years">No. of Years</label> <select name="" id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+
+        </select> <br />
+        <span id="result"></span><br>
+
+        <button id="compute" onclick="compute()">Compute Interests</button>
+        <h4 id='value'></h4>
+        <h4>&copy;Everyone Can Get Rich</h4>
+    </div>
+</body>
+
 </html>
