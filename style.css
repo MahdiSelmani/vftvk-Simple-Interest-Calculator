@@ -1,4 +1,28 @@
-body {background-color:tan;}
-h1{color:green;}
+html {
+    font-family: sans-serif;
+background-color: black;}
+h1{color:gray;}
+#countainer {
+    border-radius: 20px;
+    background-color: white;
+    border : 1px solid black;
+    width : 40%;
+}
+label
+{
+	display: block;
+	width: 100px;
+	float: left;
+    margin-left: 50px;
+    margin-right: 25px;
+}
+#compute {
+    margin-left: 50px;
+}
+ #value {
+    margin-left: 50px;
 
-
+ }
+ 
+ 
+mark {background-color:yellow} ;
